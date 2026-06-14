@@ -1,6 +1,6 @@
 # Fog2PRD
 
-**从模糊需求到可交付的 PRD — AI Skill 全流程流水线。**
+**从模糊需求到可交付的 PRD — 一个 Skill 搞定。**
 
 Fog2PRD 是一个 AI Skill，将原始、模糊的产品需求转化为结构化、可直接交付的产出物。它采用**原型优先**工作流：澄清 → 可视化 → 文档 → 交接。
 
@@ -118,42 +118,39 @@ Fog2PRD: 📄 PRD 文档已生成：[文档链接]
 
 ---
 
-## 依赖
+## 安装说明
 
-本 Skill 基于 Hermes Agent 运行，依赖以下配套技能：
+Fog2PRD 是一个 AI Skill，兼容任何支持 skill/instruction 文件的 AI 编码工具。
+
+### Hermes Agent
+
+```bash
+hermes install fog2prd
+```
+
+### Claude Code
+
+将 `SKILL.md` 和参考文件复制到项目中，通过 `CLAUDE.md` 引用：
+
+```markdown
+You have the Fog2PRD skill. Load it from .claude/skills/fog2prd/
+```
+
+### Cursor / Windsurf / Cline
+
+将 Skill 文件复制到项目的 `.cursor/rules/`、`.windsurf/rules/` 或 `.clinerules/` 目录即可。
+
+---
+
+## 配套技能
+
+以下配套技能可增强输出质量，按需选用：
 
 | 技能 | 用途 |
 |------|------|
 | frontend-design | 高质量 HTML 原型生成 |
 | excalidraw-diagram | 业务流程和线框图 |
 | obsidian-markdown | Markdown 文档处理 |
-
----
-
-## 安装
-
-```bash
-# 通过 Hermes Agent 安装
-hermes install fog2prd
-
-# 或手动克隆
-git clone https://github.com/Dawni233/fog2prd.git ~/.hermes/skills/fog2prd
-```
-
-安装后，在对话中直接提需求即可：
-
-> *"我们需要一个新的用户引导流程…"*
-> *"给仪表盘改版生成 PRD"*
-> *"设计移动端 app 的需求"*
-
----
-
-## 路线图
-
-- [ ] 模板自定义 UI
-- [ ] 导出 PDF / Word
-- [ ] 多语言 PRD 生成
-- [ ] 对接 Jira / Linear 自动创建工单
 
 ---
 

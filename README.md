@@ -1,6 +1,6 @@
 # Fog2PRD
 
-**From Foggy Requirements to PRD — One AI Skill Pipeline.**
+**From Foggy Requirements to PRD — One Skill to Rule Them All.**
 
 Fog2PRD is an AI skill that transforms raw, ambiguous product requirements into structured, ship-ready deliverables. It follows a prototype-first workflow: clarify → visualize → document → handover.
 
@@ -41,7 +41,7 @@ Fog2PRD is an AI skill that transforms raw, ambiguous product requirements into 
 |------------|--------|----------|
 | Requirements Understanding Report | Markdown | Product Manager |
 | Interactive HTML Prototype | HTML + CSS + JS | Stakeholders |
-| Business Flow Diagram | Excalidraw | All |
+| Business Flow Diagram | Excalidraw | Everyone |
 | Formal PRD Specification | Markdown (formal template) | Sign-off / Archive |
 | Dev Handover Note | Markdown (lightweight) | Engineering |
 | Page Wireframes | Excalidraw (quick mode) | Engineering |
@@ -75,7 +75,7 @@ Parses the input, extracts roles and features, scores complexity, and asks targe
 
 ### Stage 2: Prototype Design & Iteration
 
-Generates interactive HTML prototypes using modern UI patterns (cards, shadows, transitions, Lucide icons). Supports unlimited iterations until user sign-off.
+Generates interactive HTML prototypes using modern UI patterns (cards, shadows, transitions, Lucide icons). Supports unlimited iterations until confirmation.
 
 ### Stage 3: Formal PRD Generation
 
@@ -118,42 +118,39 @@ Fog2PRD: 📄 PRD document generated: [doc link]
 
 ---
 
-## Dependencies
+## Installation
 
-This skill is designed for Hermes Agent and relies on these companion skills:
+Fog2PRD is an AI skill — it works with any AI coding agent that supports skill/instruction files.
+
+### Hermes Agent
+
+```bash
+hermes install fog2prd
+```
+
+### Claude Code
+
+Copy the `SKILL.md` and reference files into your project, then reference them via `CLAUDE.md`:
+
+```markdown
+You have the Fog2PRD skill. Load it from .claude/skills/fog2prd/
+```
+
+### Cursor / Windsurf / Cline
+
+Copy the skill files into your project's `.cursor/rules/`, `.windsurf/rules/`, or `.clinerules/` directory.
+
+---
+
+## Companion Skills
+
+This skill can optionally leverage these companion skills for better output:
 
 | Skill | Purpose |
 |-------|---------|
-| [frontend-design](https://github.com/dawni/frontend-design) | High-quality HTML prototype generation |
+| frontend-design | High-quality HTML prototype generation |
 | excalidraw-diagram | Business flow and wireframe diagrams |
 | obsidian-markdown | Markdown document processing |
-
----
-
-## Installation
-
-```bash
-# Install via Hermes Agent
-hermes install fog2prd
-
-# Or clone manually
-git clone https://github.com/dawni/fog2prd.git ~/.hermes/skills/fog2prd
-```
-
-Then trigger it naturally in conversation:
-
-> *"We need a new user onboarding flow..."*
-> *"Generate PRD for the dashboard redesign"*
-> *"Design requirements for the mobile app"*
-
----
-
-## Roadmap
-
-- [ ] Template customization UI
-- [ ] Export to PDF/Word
-- [ ] Multi-language PRD generation
-- [ ] Integration with Jira/Linear for automatic ticket creation
 
 ---
 

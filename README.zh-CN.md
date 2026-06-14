@@ -1,8 +1,8 @@
 # Fog2PRD
 
-**从模糊需求到可交付的 PRD — AI 全流程流水线。**
+**从模糊需求到可交付的 PRD — AI Skill 全流程流水线。**
 
-Fog2PRD 是一个 AI Agent，将原始、模糊的产品需求转化为结构化、可直接交付的产出物。它采用**原型优先**工作流：澄清 → 可视化 → 文档 → 交接。
+Fog2PRD 是一个 AI Skill，将原始、模糊的产品需求转化为结构化、可直接交付的产出物。它采用**原型优先**工作流：澄清 → 可视化 → 文档 → 交接。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -120,7 +120,7 @@ Fog2PRD: 📄 PRD 文档已生成：[文档链接]
 
 ## 依赖
 
-本 Agent 基于 Hermes Agent 运行，依赖以下配套技能：
+本 Skill 基于 Hermes Agent 运行，依赖以下配套技能：
 
 | 技能 | 用途 |
 |------|------|

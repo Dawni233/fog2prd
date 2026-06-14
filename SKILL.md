@@ -1,6 +1,6 @@
 ---
 name: fog2prd
-description: From foggy requirements to PRD — an AI agent that clarifies, prototypes, documents, and hands over product requirements. Supports verbal input and high-level docs, outputs interactive HTML prototypes, formal PRD documents, and dev handover specs.
+description: From foggy requirements to PRD — an AI skill that clarifies, prototypes, documents, and hands over product requirements. Supports verbal input and high-level docs, outputs interactive HTML prototypes, formal PRD documents, and dev handover specs.
 metadata:
   version: 2.0.0
 ---

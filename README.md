@@ -1,8 +1,8 @@
 # Fog2PRD
 
-**From Foggy Requirements to PRD — One AI Pipeline.**
+**From Foggy Requirements to PRD — One AI Skill Pipeline.**
 
-Fog2PRD is an AI agent that transforms raw, ambiguous product requirements into structured, ship-ready deliverables. It follows a prototype-first workflow: clarify → visualize → document → handover.
+Fog2PRD is an AI skill that transforms raw, ambiguous product requirements into structured, ship-ready deliverables. It follows a prototype-first workflow: clarify → visualize → document → handover.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -120,7 +120,7 @@ Fog2PRD: 📄 PRD document generated: [doc link]
 
 ## Dependencies
 
-This agent is designed for Hermes Agent and relies on these companion skills:
+This skill is designed for Hermes Agent and relies on these companion skills:
 
 | Skill | Purpose |
 |-------|---------|
